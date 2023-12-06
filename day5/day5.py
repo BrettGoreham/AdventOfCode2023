@@ -59,14 +59,11 @@ for seed in seeds:
 
 print('part 1: ' + str(lowestlocation))
 
-
-
 location = -1
 found = False
 while not found:
     location += 1
     val = location
-
 
     c = len(mapsMaps) - 1
     while c >= 0:
