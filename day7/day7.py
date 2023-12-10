@@ -143,19 +143,19 @@ def get_rank_from_hand2(_hand):
 
         if count2 == 2 and jokers == 1:
             return 2
-        if max_val == 3 and (jokers == 1 or jokers == 2 or count2 == 1):
+        if max_val == 3 and count2 == 1:
             return 2
 
         return 3
     if max_val + jokers == 2 or jokers == 2:
-        if jokers == 2:
-            return 4
-        elif jokers == 0:
+
+        if jokers == 0:
             count2 = 0
             for x in all_freq.values():
                 if x == 2:
                     count2 += 1
             if count2 == 2:
+                print('D')
                 return 4
         return 5
 
