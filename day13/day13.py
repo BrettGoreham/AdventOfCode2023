@@ -2,9 +2,7 @@ with open('day13Input.txt') as f:
     content = f.readlines()
 content = [x.strip() for x in content]
 
-
 puzzles = []
-
 puzzle = []
 for line in content:
     if line == '':
@@ -14,7 +12,6 @@ for line in content:
         puzzle.append(line)
 
 puzzles.append(puzzle)
-
 
 verticalLinesLeft = 0
 horizontalLinesAbove = 0
