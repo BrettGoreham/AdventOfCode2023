@@ -3,10 +3,7 @@ with open('day19Input.txt') as f:
     content = f.readlines()
 content = [x.strip() for x in content]
 
-class Rule:
-    def __init__(self, name, rule_list):
-        self.name = name
-        self.rule_list = rule_list
+
 class Thing:
     def __init__(self, x, m, a, s):
 
@@ -17,7 +14,6 @@ class Thing:
 
     def total(self):
         return self.x + self.m + self.a + self.s
-
 
 
 rulesDict = {}
